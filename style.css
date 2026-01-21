@@ -1,0 +1,72 @@
+body {
+    background: #8e1880; /* dark black background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Arial', sans-serif;
+}
+
+.calculator {
+    background: #7f0d70; /* dark greenish black body */
+    padding: 20px;
+    border-radius: 20px;
+    width: 280px;
+    box-shadow: 0 8px 15px rgba(106, 14, 79, 0.2); /* subtle green glow */
+}
+
+.display {
+    background: #8b0e8f; /* dark green display */
+    color: #381634; /* neon green numbers */
+    height: 60px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    font-size: 28px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 12px;
+    box-shadow: inset 0 2px 5px rgba(52, 23, 46, 0.2);
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.btn {
+    height: 55px;
+    background: #aa1caf; /* dark green buttons */
+    color: #341b32; /* neon green text */
+    font-size: 18px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 4px #815774; /* dark shadow */
+}
+
+.btn:hover {
+    opacity: 0.85;
+}
+
+.operator {
+    background: #af149d; /* darker green for operators */
+    box-shadow: 0 4px #976c8f;
+}
+
+.function {
+    background: #ba28c2; /* greenish-red for C, DEL, % */
+    box-shadow: 0 4px #7b547a;
+}
+
+.equal {
+    background: #a3137f; /* greenish equal button */
+    box-shadow: 0 4px #65465f;
+}
+
+.zero {
+    grid-column: span 2;
+}
